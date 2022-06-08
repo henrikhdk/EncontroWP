@@ -21,16 +21,16 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'local' );
+define( 'DB_NAME', 'u201515744_UjA8Y' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'u201515744_TZRed' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', 'cBs35zW44U' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'mysql' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -38,7 +38,7 @@ define( 'DB_CHARSET', 'utf8' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
-/**#@+
+/**
  * Authentication unique keys and salts.
  *
  * Change these to different unique phrases! You can generate these using
@@ -49,6 +49,15 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
+define( 'AUTH_KEY',          'n8~;=!i3)$3=m#f+UV@szELDV!oo8<i=LRD+Q+ouFoib,h#[bYr^Wov1_<&RTvuV' );
+define( 'SECURE_AUTH_KEY',   'ayq3&4a>#,OTlvvRkB @u>KQ=bG]8n:UEO]j?1,0Ejdlzc 2LB!DA{@Da}NuFoRD' );
+define( 'LOGGED_IN_KEY',     '`[1o.#HSl]=YxQo*!/2tWXuVwTBEXl6dr=4f4<=`,aazn_WQfpC[;OT~!&wvIRBg' );
+define( 'NONCE_KEY',         '?YinbrC}gymQJ:kGr<hq$JrWC8IYI(1KuhI#o-SCYC<`Gznlqo%xag}W%*TSMEZc' );
+define( 'AUTH_SALT',         'ONO=W?o1[T%5L:-`2FtsCItm$XV4%=0X&a~A9(]8/[CgWLyd_m+{cP*z +F%LZSQ' );
+define( 'SECURE_AUTH_SALT',  'V6d6x~@H<1<I^abusyabAG_v^!9iE&?qZx`DRe[f>f,ztk_<l811`XbOFZo(.VcV' );
+define( 'LOGGED_IN_SALT',    'fF4$OC[va3i_q |:hT/?(2E(yz=w{N[x2|_[qGkX2dNeiNeeg*v2~0w![_Vqd]F#' );
+define( 'NONCE_SALT',        '%1k0EPk}oZ{Np@-,~&e!Vhd;$zVAkpa6~7;J1Zimi?kGDdNzq&zQiUtteb@043vU' );
+define( 'WP_CACHE_KEY_SALT', 'Z1V-N1n]o5vOQ]#c0f0`UBs{5/|8Hb25lCe@874md|&Ek2QxSW/%*r&u|/z5o:ks' );
 
 
 /**#@-*/
@@ -89,3 +98,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+@ini_set('max_execution_time' , '300' );
